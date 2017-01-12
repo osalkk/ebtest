@@ -5,11 +5,6 @@
       "ContainerDirectory": "/var/app",
       "HostDirectory": "/var/app"
     }
-  ],"Ports": [
-    {
-      "hostPort" : "80",
-      "ContainerPort": "5002"
-    }
   ],
   "Logging": "/var/eb_log"
 }
