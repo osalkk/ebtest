@@ -17,6 +17,10 @@ mysql.init_app(app)
 def main():
     return render_template('index.html')
 
+@app.route('/showHome')
+def main():
+    return render_template('index.html')
+
 @app.route('/showSignUp')
 def showSignUp():
     return render_template('signup.html')
@@ -55,4 +59,4 @@ def signUp():
         conn.close()
 
 if __name__ == "__main__":
-    app.run(port=5002)
+    app.run(host="0.0.0.0",port=5002)
